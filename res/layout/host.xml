@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/etIpAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:hint="Network address pool"
+            android:text="192.168.0.0" >
+        </EditText>
+
+        <Spinner
+            android:id="@+id/sMask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:prompt="@string/bit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etHowMany"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:hint="Subnet size"
+            android:inputType="number" android:layout_weight="0.9"/>
+
+        <Button
+            android:id="@+id/bAdd"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:width="50dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvNumbers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

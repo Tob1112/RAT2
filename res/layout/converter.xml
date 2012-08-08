@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etBinary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:digits="10"
+        android:gravity="center"
+        android:hint="Binary Number"
+        android:inputType="number"
+        android:maxLength="8" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:width="80dp" />
+
+        <Button
+            android:id="@+id/bZero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:width="80dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etDecimal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/bConv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="To binary"
+        android:width="100dp" />
+
+    <ImageButton
+        android:id="@+id/bClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:contentDescription="cross for delete button"
+        android:src="@drawable/cross" />
+
+</LinearLayout>
